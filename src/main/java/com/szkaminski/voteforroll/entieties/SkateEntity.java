@@ -2,10 +2,7 @@ package com.szkaminski.voteforroll.entieties;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Year;
 
@@ -13,7 +10,8 @@ import java.time.Year;
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
-public class Skates {
+@Table(name = "skates")
+public class SkateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
